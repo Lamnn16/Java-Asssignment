@@ -1,0 +1,1 @@
+[Car [id=1, make=Toyota, model=Camry, year=2018, color=Blue, price=20000.0, registrationNumber=ABC123]]
