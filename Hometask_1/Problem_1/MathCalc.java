@@ -1,10 +1,3 @@
-/**
- * Problem 1: Language Basics
- *
- * @author Nhat Lam Nguyen
- * @matrikel-Nr: 7219037
-**/
-
 public class MathCalc {
     public static void main(String[] args) {
         double sunDiameter = 865000;

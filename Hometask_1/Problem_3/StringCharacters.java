@@ -1,10 +1,3 @@
-/**
- * Problem 3: Object Basics
- *
- * @author Nhat Lam Nguyen
- * @matrikel-Nr: 7219037
-**/
-
 public class StringCharacters {
     public static void main(String[] args) {
         String text = "To be or not to be, that is the question;"
@@ -15,7 +8,6 @@ public class StringCharacters {
         int spaces = 0,
         vowels = 0,
         letters = 0;
-        //YOUR CODE HERE
         System.out.println(text);
         char[] ch = text.toCharArray();
         for (int i = 0; i < text.length(); i++){

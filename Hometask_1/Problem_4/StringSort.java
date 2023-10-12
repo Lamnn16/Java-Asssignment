@@ -1,31 +1,23 @@
-/**
- * Problem 4: Object Basics and Simple Data Objects
- *
- * @author Nhat Lam Nguyen
- * @matrikel-Nr: 7219037
-**/
-
 public class StringSort {
     public static void main(String []args) {
-        String text = "To be or not to be, that is the question;"
+        String text = "to be or not to be, that is the question;"
         +"Whether `tis nobler in the mind to suffer"
         +" the slings and arrows of outrageous fortune,"
         +" or to take arms against a sea of troubles,"
         +" and by opposing end them?";
-        
-        String[] str = text.split("\\s+");
+
         String temp;
-        System.out.println("Strings in sorted order:");
-        /* Bubble Sort */
-        for (int j = 0; j < str.length; j++) {
-              for (int i = j + 1; i < str.length; i++) {
-            if (str[i].compareTo(str[j]) < 0) {
-                temp = str[j];
-                str[j] = str[i];
-                str[i] = temp;
+        String[] str = text.split("\\s+");
+        System.out.println("The given soliloquy in sorted order:");
+        for (int i = 0; i < str.length; i++) {
+            for (int j = i + 1; j < str.length; j++) {
+                if (str[j].compareTo(str[i]) < 0) {
+                    temp = str[i];
+                    str[i] = str[j];
+                    str[j] = temp;
+                }
             }
-           }
-           System.out.println(str[j]);
+            System.out.println(str[i]);
         }
-    }   
+    }
 }
